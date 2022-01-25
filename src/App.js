@@ -9,14 +9,14 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 function App() {
   const [user]= useAuthState(auth)
   return (
-    <>
+    <div className="App">
       <header>
         <SignOut/>
       </header>
       <section>
         {user? <ChatSpace/> : <SignIn/>}
       </section>
-    </>
+    </div>
   )
 }
 
