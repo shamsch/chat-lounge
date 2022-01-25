@@ -16,10 +16,10 @@ function App() {
   return (
     <div className="App">
       <header>
-        <SignOut />
+        <SignOut setRoom={setRoomCode} />
       </header>
       <section>
-        {user ? (roomCode ? <ChatSpace /> : <CreateRoom setRoomCode={setRoomCode}/>) : <SignIn />}
+        {user ? (roomCode ? <ChatSpace chatRoom={roomCode}/> : <CreateRoom setRoomCode={setRoomCode}/>) : <SignIn />}
       </section>
     </div>
   );

@@ -6,10 +6,10 @@ import {useCollectionData} from 'react-firebase-hooks/firestore'
 
 import ChatMessage from "./ChatMessage";
 
-export default function ChatSpace() {
+export default function ChatSpace({chatRoom}) {
   const dummy = useRef();
-  const messagesRef = firestore.collection("messages");
-  const query = messagesRef.orderBy("createdAt").limit(25);
+  const messagesRef = firestore.collection(chatRoom);
+  const query = messagesRef.orderBy("createdAt").limit(15);
 
   const [messages] = useCollectionData(query, { idField: "id" });
 
