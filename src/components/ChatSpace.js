@@ -44,7 +44,7 @@ export default function ChatSpace() {
         <input
           value={formValue}
           onChange={(e) => setFormValue(e.target.value)}
-          placeholder="say something nice"
+          placeholder="type your message"
         />
 
         <button type="submit" disabled={!formValue}>

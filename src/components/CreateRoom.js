@@ -1,11 +1,12 @@
 import { useState } from "react";
 
-export default function CreateRoom() {
+export default function CreateRoom({setRoomCode}) {
   const [code, setCode] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(code, " is the room user trying to access");
+    setRoomCode(code)
   };
 
   return (
@@ -19,7 +20,7 @@ export default function CreateRoom() {
         maxLength={4}
         minLength={4}
         onChange={(e) => setCode(e.target.value)}
-        placeholder="FOUR DIGIT CODE"
+        placeholder="i.e FRND or FMLY"
       />
       <button type="submit" disabled={!code}>
         ENTER/CREATE
