@@ -22,7 +22,7 @@ function App() {
     <div className="App">
       <header>
         <FontAwesomeIcon icon={faComment} className={"icon"} size='3x' />
-        <h1 className="title"> Chat Lounge</h1>
+        <h1 className="title" onClick={()=>setRoomCode(null)}> Chat Lounge</h1>
         <SignOut setRoom={setRoomCode} />
       </header>
       <section>

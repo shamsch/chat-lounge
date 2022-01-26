@@ -186,4 +186,9 @@ img {
   color: #999999;
   font-family: "Comforter", sans-serif;
   font-weight: bold;
+  cursor: pointer;
+}
+
+.title:hover{
+  background-color: #6649b8;
 }
