@@ -19,7 +19,15 @@ function App() {
         <SignOut setRoom={setRoomCode} />
       </header>
       <section>
-        {user ? (roomCode ? <ChatSpace chatRoom={roomCode}/> : <CreateRoom setRoomCode={setRoomCode}/>) : <SignIn />}
+        {user ? (
+          roomCode ? (
+            <ChatSpace chatRoom={roomCode} />
+          ) : (
+            <CreateRoom setRoomCode={setRoomCode} />
+          )
+        ) : (
+          <SignIn />
+        )}
       </section>
     </div>
   );
