@@ -183,6 +183,7 @@ img {
 }
 
 .title {
+  margin: 0 auto;
   color: #999999;
   font-family: "Comforter", sans-serif;
   font-weight: bold;
