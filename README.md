@@ -1,7 +1,7 @@
 
 ## React Chat App with Firebase Project
 
-Chat app made with React JS and Firebase Authentication and Firestore Database. I used React Firebase Hooks library to using the collection from the data base and authentication. I used some fancy google fonts and font-awesome to enhance the aesthetics.
+Chat app made with React JS and Firebase Authentication and Firestore Database. I used React Firebase Hooks library for authentication. I used some fancy google fonts and font-awesome to enhance the aesthetics.
 
   
 
