@@ -147,3 +147,20 @@ img {
   border-radius: 50%;
   margin: 2px 5px;
 }
+
+.create-room{
+  color:rgb(184, 178, 178);
+  display: inline-block;
+  text-align: center;
+  min-height: 50vh;
+  background-color: rgb(40, 37, 53);
+}
+
+
+.create-room input{
+  width: auto;
+  margin-right: 25px;
+}
+.create-room button{
+  width: auto;
+}
