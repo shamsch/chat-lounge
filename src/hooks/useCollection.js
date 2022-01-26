@@ -16,7 +16,7 @@ export const useCollection = (collection, _query,_orderBy) => {
       ref=ref.where(...query)
     }
     if(orderBy){
-      ref=ref.orderBy(...orderBy).limit(10)
+      ref=ref.orderBy(...orderBy).limit(30)
     }
 
     const unsubscribe = ref.onSnapshot(snapshot => {
