@@ -9,6 +9,11 @@ import { useAuthState } from "react-firebase-hooks/auth";
 
 import { useState } from "react";
 
+//font awesome 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faComment } from '@fortawesome/free-solid-svg-icons'
+
+
 function App() {
   const [user] = useAuthState(auth);
   const [roomCode, setRoomCode] = useState(null);
@@ -16,6 +21,8 @@ function App() {
   return (
     <div className="App">
       <header>
+        <FontAwesomeIcon icon={faComment} className={"icon"} size='3x' />
+        <h1 className="title"> Chat Lounge</h1>
         <SignOut setRoom={setRoomCode} />
       </header>
       <section>
