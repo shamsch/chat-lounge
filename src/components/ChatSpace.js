@@ -1,17 +1,18 @@
-import {useRef, useState} from "react";
+import { useEffect, useRef, useState } from "react";
+import { useCollection } from "../hooks/useCollection";
 import { firestore, auth } from "../firebase/config";
 import firebase from "firebase";
 
-import {useCollectionData} from 'react-firebase-hooks/firestore'
-
 import ChatMessage from "./ChatMessage";
 
-export default function ChatSpace({chatRoom}) {
+export default function ChatSpace({ chatRoom }) {
   const dummy = useRef();
   const messagesRef = firestore.collection(chatRoom);
-  const query = messagesRef.orderBy("createdAt").limit(15);
 
-  const [messages] = useCollectionData(query, { idField: "id" });
+  //had to swap out with a custom hook since it uses a listener 
+  const {documents, error} = useCollection(chatRoom,null,["createdAt", "desc"]);
+  const messages = documents.map((val)=> val);
+  messages.reverse();
 
   const [formValue, setFormValue] = useState("");
 
@@ -30,6 +31,10 @@ export default function ChatSpace({chatRoom}) {
     setFormValue("");
     dummy.current.scrollIntoView({ behavior: "smooth" });
   };
+
+  useEffect(()=>{
+    dummy.current.scrollIntoView({behavior: "smooth"})
+  },[messages])
 
   return (
     <>
