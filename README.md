@@ -1,3 +1,12 @@
+Chat app made with React JS and Firebase Authentication and Firestore Database. I used React Firebase Hooks library to using the collection from the data base and authentication. I used some fancy google fonts and font-awesome to enhance the aesthetics. 
+
+Shamsur 
+
+<section>
+<summary>
+Default React JS ReadMe Instructions:
+</summary>
+<br>
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +77,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+</section>
