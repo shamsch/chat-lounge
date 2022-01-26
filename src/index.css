@@ -162,24 +162,25 @@ img {
   min-height: 50vh;
   background-color: rgb(40, 37, 53);
 }
+
 .create-room label{
   display: block;
   font-size: 95%;
   margin-bottom: 15px;
 }
+
 .create-room input {
   width: auto;
   margin-right: 25px;
 }
+
 .create-room button {
   width: auto;
 }
 
 .icon {
   color: #0b93f6;
-  margin-left: 35px;
-  width: 100%;
-  height: auto;
+  margin-left: 10px;
 }
 
 .title {
@@ -188,6 +189,7 @@ img {
   font-family: "Comforter", sans-serif;
   font-weight: bold;
   cursor: pointer;
+  font-size: 300%;
 }
 
 .title:hover{
