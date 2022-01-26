@@ -24,3 +24,6 @@ yarn-error.log*
 
 #readme
 README.html
+
+#firebase
+.firebase
