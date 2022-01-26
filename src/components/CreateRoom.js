@@ -10,7 +10,7 @@ export default function CreateRoom({setRoomCode}) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="create-room">
       <label>
         Enter four letters room code to enter existing room or create one on the
         fly
